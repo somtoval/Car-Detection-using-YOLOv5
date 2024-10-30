@@ -1,0 +1,621 @@
+[2024-10-28 12:53:23,995: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 12:53:24,007: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 12:53:24,023: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 12:53:24,024: ERROR: stage_01_data_ingestion: yaml file is empty]
+Traceback (most recent call last):
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\config\configuration.py", line 11, in __init__
+    self.params = read_yaml(params_filepath)
+  File "C:\Users\user\Envs\env\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-10-28 12:56:59,087: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 12:56:59,090: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 12:56:59,093: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 12:56:59,093: ERROR: stage_01_data_ingestion: yaml file is empty]
+Traceback (most recent call last):
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 247, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\config\configuration.py", line 11, in __init__
+    self.params = read_yaml(params_filepath)
+  File "C:\Users\user\Envs\env\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-10-28 13:00:34,292: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:00:34,295: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:00:34,309: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:00:34,312: ERROR: stage_01_data_ingestion: "'ConfigBox' object has no attribute 'artifact_root'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'artifact_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artifact_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artifact_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifact_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'artifact_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artifact_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artifact_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 13, in main
+    config = ConfigurationManager()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\config\configuration.py", line 13, in __init__
+    create_directories([self.config.artifact_root])
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifact_root'"
+[2024-10-28 13:01:08,585: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:01:08,590: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:01:08,593: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:01:08,593: INFO: common: created directory at: artifacts]
+[2024-10-28 13:01:08,594: ERROR: stage_01_data_ingestion: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2024-10-28 13:01:50,496: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:01:50,506: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:01:50,509: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:01:50,510: INFO: common: created directory at: artifacts]
+[2024-10-28 13:01:50,511: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:01:50,513: ERROR: stage_01_data_ingestion: DataIngestionConfig.__init__() got an unexpected keyword argument 'root_dir']
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\config\configuration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'root_dir'
+[2024-10-28 13:04:42,376: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:04:42,378: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:04:42,380: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:04:42,381: INFO: common: created directory at: artifacts]
+[2024-10-28 13:04:42,381: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:04:42,382: ERROR: stage_01_data_ingestion: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_dir']
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\config\configuration.py", line 20, in get_data_ingestion_config
+    data_ingestion_config = DataIngestionConfig(
+TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'source_dir'
+[2024-10-28 13:05:10,963: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:05:10,967: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:05:10,969: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:05:10,970: INFO: common: created directory at: artifacts]
+[2024-10-28 13:05:10,971: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:05:10,989: ERROR: stage_01_data_ingestion: [Errno 2] No such file or directory: 'data.zip']
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.get_file()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\components\data_ingestion.py", line 31, in get_file
+    shutil.copy(self.config.source_path, self.config.local_data_file)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\shutil.py", line 417, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\shutil.py", line 254, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'data.zip'
+[2024-10-28 13:05:34,917: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:05:34,921: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:05:34,922: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:05:34,924: INFO: common: created directory at: artifacts]
+[2024-10-28 13:05:34,925: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:05:35,012: ERROR: stage_01_data_ingestion: module 'pandas' has no attribute 'read']
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.process_bbox()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\components\data_ingestion.py", line 63, in process_bbox
+    bbox_csv = pd.read(os.path.join(self.config.root_dir, 'train_solution_bounding_boxes.csv'))
+AttributeError: module 'pandas' has no attribute 'read'
+[2024-10-28 13:06:04,080: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:06:04,084: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:06:04,087: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:06:04,088: INFO: common: created directory at: artifacts]
+[2024-10-28 13:06:04,090: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:06:04,092: INFO: data_ingestion: File already exists of size: ~ 2538 KB]
+[2024-10-28 13:06:04,211: ERROR: stage_01_data_ingestion: [Errno 2] No such file or directory: 'artifacts/data_ingestion\\train_solution_bounding_boxes.csv']
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.process_bbox()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\components\data_ingestion.py", line 63, in process_bbox
+    bbox_csv = pd.read_csv(os.path.join(self.config.root_dir, 'train_solution_bounding_boxes.csv'))
+  File "C:\Users\user\Envs\env\lib\site-packages\pandas\io\parsers\readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\user\Envs\env\lib\site-packages\pandas\io\parsers\readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\user\Envs\env\lib\site-packages\pandas\io\parsers\readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\user\Envs\env\lib\site-packages\pandas\io\parsers\readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+  File "C:\Users\user\Envs\env\lib\site-packages\pandas\io\common.py", line 863, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts/data_ingestion\\train_solution_bounding_boxes.csv'
+[2024-10-28 13:06:44,850: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:06:44,852: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:06:44,853: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:06:44,855: INFO: common: created directory at: artifacts]
+[2024-10-28 13:06:44,856: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:06:44,858: INFO: data_ingestion: File already exists of size: ~ 2538 KB]
+[2024-10-28 13:06:57,736: ERROR: stage_01_data_ingestion: 'DataIngestionConfig' object has no attribute 'val_split_ratio']
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 19, in main
+    data_ingestion.split_data()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\components\data_ingestion.py", line 127, in split_data
+    val_split = self.config.val_split_ratio
+AttributeError: 'DataIngestionConfig' object has no attribute 'val_split_ratio'
+[2024-10-28 13:09:16,643: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:09:16,647: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:09:16,649: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:09:16,650: INFO: common: created directory at: artifacts]
+[2024-10-28 13:09:16,651: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:09:16,654: INFO: data_ingestion: File already exists of size: ~ 2538 KB]
+[2024-10-28 13:09:26,577: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:11:43,763: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:11:43,765: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:11:43,768: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:11:43,768: INFO: common: created directory at: artifacts]
+[2024-10-28 13:11:43,769: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:11:59,496: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:14:31,004: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:14:31,008: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:14:31,009: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:14:31,011: INFO: common: created directory at: artifacts]
+[2024-10-28 13:14:31,012: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:14:31,014: INFO: data_ingestion: File already exists of size: ~ 2538 KB]
+[2024-10-28 13:14:45,862: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:21:20,357: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:21:20,360: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:21:20,363: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:21:20,364: INFO: common: created directory at: artifacts]
+[2024-10-28 13:21:20,366: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:21:38,823: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:24:25,828: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:24:25,830: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:24:25,832: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:24:25,833: INFO: common: created directory at: artifacts]
+[2024-10-28 13:24:25,834: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:24:25,836: INFO: data_ingestion: File already exists of size: ~ 2538 KB]
+[2024-10-28 13:24:36,932: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:25:30,033: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:25:30,049: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:25:30,105: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:25:30,109: INFO: common: created directory at: artifacts]
+[2024-10-28 13:25:30,122: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:26:09,548: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:27:05,078: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:27:05,083: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:27:05,084: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:27:05,085: INFO: common: created directory at: artifacts]
+[2024-10-28 13:27:05,085: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:27:05,088: INFO: data_ingestion: File already exists of size: ~ 2538 KB]
+[2024-10-28 13:27:11,812: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:27:50,399: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:27:50,404: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:27:50,409: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:27:50,411: INFO: common: created directory at: artifacts]
+[2024-10-28 13:27:50,413: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:28:00,791: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:29:31,136: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:29:31,138: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:29:31,140: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:29:31,141: INFO: common: created directory at: artifacts]
+[2024-10-28 13:29:31,142: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:29:31,143: INFO: data_ingestion: File already exists of size: ~ 2538 KB]
+[2024-10-28 13:29:40,544: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:35:22,439: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:35:22,441: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:35:22,446: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:35:22,447: INFO: common: created directory at: artifacts]
+[2024-10-28 13:35:22,448: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:35:22,451: INFO: data_ingestion: File already exists of size: ~ 2538 KB]
+[2024-10-28 13:35:33,988: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:36:04,489: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:36:04,491: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:36:04,494: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:36:04,495: INFO: common: created directory at: artifacts]
+[2024-10-28 13:36:04,497: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:36:12,983: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:37:46,280: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:37:46,283: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:37:46,287: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:37:46,288: INFO: common: created directory at: artifacts]
+[2024-10-28 13:37:46,289: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:37:46,291: INFO: data_ingestion: File already exists of size: ~ 2538 KB]
+[2024-10-28 13:37:53,230: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:43:24,967: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:43:24,967: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:43:24,967: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:43:24,967: INFO: common: created directory at: artifacts]
+[2024-10-28 13:43:24,981: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:43:25,078: ERROR: stage_01_data_ingestion: module 'os' has no attribute 'join']
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.process_bbox()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\components\data_ingestion.py", line 65, in process_bbox
+    for root, _, files in os.walk(os.join(self.config.root_dir, 'data')):
+AttributeError: module 'os' has no attribute 'join'
+[2024-10-28 13:43:58,118: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:43:58,118: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:43:58,118: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:43:58,118: INFO: common: created directory at: artifacts]
+[2024-10-28 13:43:58,118: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:43:58,132: INFO: data_ingestion: File already exists of size: ~ 2538 KB]
+[2024-10-28 13:44:06,192: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 13:47:36,998: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-10-28 13:47:36,999: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 13:47:37,001: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 13:47:37,001: INFO: common: created directory at: artifacts]
+[2024-10-28 13:47:37,001: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-10-28 13:47:37,006: INFO: data_ingestion: File already exists of size: ~ 2538 KB]
+[2024-10-28 13:47:43,778: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2024-10-28 19:09:01,099: INFO: stage_03_training: *******************]
+[2024-10-28 19:09:01,101: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 19:09:01,126: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 19:09:01,157: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 19:09:01,158: INFO: common: created directory at: artifacts]
+[2024-10-28 19:09:01,159: INFO: common: created directory at: artifacts\training]
+[2024-10-28 19:09:01,161: ERROR: stage_03_training: "'ConfigBox' object has no attribute 'epochs'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'EPOCHS'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'EPOCHS'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'EPOCHS'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'EPOCHS'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'epochs'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'epochs'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'epochs'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_03_training.py", line 29, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_03_training.py", line 16, in main
+    training_config = config.get_training_config()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\config\configuration.py", line 40, in get_training_config
+    params_epochs=self.params.EPOCHS,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'epochs'"
+[2024-10-28 19:10:02,561: INFO: stage_03_training: *******************]
+[2024-10-28 19:10:02,562: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 19:10:02,565: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 19:10:02,579: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 19:10:02,581: INFO: common: created directory at: artifacts]
+[2024-10-28 19:10:02,583: INFO: common: created directory at: artifacts\training]
+[2024-10-28 19:10:02,583: ERROR: stage_03_training: "'ConfigBox' object has no attribute 'image_size'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'IMAGE_SIZE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'IMAGE_SIZE'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'IMAGE_SIZE'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'IMAGE_SIZE'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'image_size'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'image_size'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'image_size'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_03_training.py", line 29, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_03_training.py", line 16, in main
+    training_config = config.get_training_config()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\config\configuration.py", line 41, in get_training_config
+    params_image_size=self.params.IMAGE_SIZE,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'image_size'"
+[2024-10-28 19:10:44,273: INFO: stage_03_training: *******************]
+[2024-10-28 19:10:44,275: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 19:10:44,277: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 19:10:44,292: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 19:10:44,305: INFO: common: created directory at: artifacts]
+[2024-10-28 19:10:44,310: INFO: common: created directory at: artifacts\training]
+[2024-10-28 19:10:44,311: ERROR: stage_03_training: ModelTrainerConfig.__init__() missing 1 required positional argument: 'training_data']
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_03_training.py", line 29, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_03_training.py", line 16, in main
+    training_config = config.get_training_config()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\config\configuration.py", line 37, in get_training_config
+    training_config = ModelTrainerConfig(
+TypeError: ModelTrainerConfig.__init__() missing 1 required positional argument: 'training_data'
+[2024-10-28 19:13:32,185: INFO: stage_03_training: *******************]
+[2024-10-28 19:13:32,186: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 19:13:32,188: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 19:13:32,189: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 19:13:32,190: INFO: common: created directory at: artifacts]
+[2024-10-28 19:13:32,192: INFO: common: created directory at: artifacts\training]
+[2024-10-28 19:13:32,416: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-10-28 19:34:05,948: INFO: stage_03_training: *******************]
+[2024-10-28 19:34:05,949: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 19:34:05,953: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 19:34:05,957: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 19:34:05,958: INFO: common: created directory at: artifacts]
+[2024-10-28 19:34:05,959: INFO: common: created directory at: artifacts\training]
+[2024-10-28 19:38:46,309: ERROR: stage_03_training: 'module' object is not callable]
+Traceback (most recent call last):
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_03_training.py", line 29, in <module>
+    obj.main()
+  File "C:\Users\user\My Data Science\My DS Revival\projects\Car Detection\src\CarDetector\pipeline\stage_03_training.py", line 19, in main
+    training.train()
+  File "c:\users\user\my data science\my ds revival\projects\car detection\src\CarDetector\components\training.py", line 30, in train
+    os.path('pip install -r requirements.txt')
+TypeError: 'module' object is not callable
+[2024-10-28 19:40:28,134: INFO: stage_03_training: *******************]
+[2024-10-28 19:40:28,135: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 19:40:28,138: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 19:40:28,140: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 19:40:28,141: INFO: common: created directory at: artifacts]
+[2024-10-28 19:40:28,142: INFO: common: created directory at: artifacts\training]
+[2024-10-28 19:42:57,618: INFO: stage_03_training: *******************]
+[2024-10-28 19:42:57,619: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 19:42:57,622: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 19:42:57,624: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 19:42:57,626: INFO: common: created directory at: artifacts]
+[2024-10-28 19:42:57,627: INFO: common: created directory at: artifacts\training]
+[2024-10-28 19:46:37,425: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-10-28 21:12:16,015: INFO: stage_03_training: *******************]
+[2024-10-28 21:12:16,016: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 21:12:16,033: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 21:12:16,038: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 21:12:16,038: INFO: common: created directory at: artifacts]
+[2024-10-28 21:12:16,045: INFO: common: created directory at: artifacts\training]
+[2024-10-28 21:14:17,300: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-10-28 23:20:48,136: INFO: stage_03_training: *******************]
+[2024-10-28 23:20:48,137: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 23:20:48,144: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 23:20:48,147: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 23:20:48,149: INFO: common: created directory at: artifacts]
+[2024-10-28 23:20:48,150: INFO: common: created directory at: artifacts\training]
+[2024-10-28 23:22:53,190: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-10-28 23:29:55,565: INFO: stage_03_training: *******************]
+[2024-10-28 23:29:55,566: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 23:29:55,570: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 23:29:55,572: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 23:29:55,573: INFO: common: created directory at: artifacts]
+[2024-10-28 23:29:55,574: INFO: common: created directory at: artifacts\training]
+[2024-10-28 23:30:06,804: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-10-28 23:31:38,199: INFO: stage_03_training: *******************]
+[2024-10-28 23:31:38,199: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 23:31:38,202: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 23:31:38,204: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 23:31:38,207: INFO: common: created directory at: artifacts]
+[2024-10-28 23:31:38,209: INFO: common: created directory at: artifacts\training]
+[2024-10-28 23:31:45,752: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-10-28 23:35:02,399: INFO: stage_03_training: *******************]
+[2024-10-28 23:35:02,399: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 23:35:02,402: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 23:35:02,404: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 23:35:02,405: INFO: common: created directory at: artifacts]
+[2024-10-28 23:35:02,407: INFO: common: created directory at: artifacts\training]
+[2024-10-28 23:35:12,816: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-10-28 23:53:28,035: INFO: stage_03_training: *******************]
+[2024-10-28 23:53:28,047: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-28 23:53:28,047: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-28 23:53:28,053: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-28 23:53:28,053: INFO: common: created directory at: artifacts]
+[2024-10-28 23:53:28,057: INFO: common: created directory at: artifacts\training]
+[2024-10-28 23:53:34,363: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-10-29 05:38:02,109: INFO: stage_03_training: *******************]
+[2024-10-29 05:38:02,112: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-29 05:38:02,114: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-29 05:38:02,118: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-29 05:38:02,119: INFO: common: created directory at: artifacts]
+[2024-10-29 05:38:02,120: INFO: common: created directory at: artifacts\training]
+[2024-10-29 05:38:09,113: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-10-29 06:02:03,475: INFO: stage_03_training: *******************]
+[2024-10-29 06:02:03,491: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-29 06:02:03,491: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-29 06:02:03,491: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-29 06:02:03,491: INFO: common: created directory at: artifacts]
+[2024-10-29 06:02:03,501: INFO: common: created directory at: artifacts\training]
+[2024-10-29 06:02:09,801: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-10-29 06:08:19,463: INFO: stage_03_training: *******************]
+[2024-10-29 06:08:19,463: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-29 06:08:19,463: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-29 06:08:19,479: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-29 06:08:19,479: INFO: common: created directory at: artifacts]
+[2024-10-29 06:08:19,483: INFO: common: created directory at: artifacts\training]
+[2024-10-29 06:09:18,433: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-10-29 11:16:34,746: INFO: stage_03_training: *******************]
+[2024-10-29 11:16:34,757: INFO: stage_03_training: >>>>>> stage Training started <<<<<<]
+[2024-10-29 11:16:34,782: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-10-29 11:16:34,812: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-10-29 11:16:34,813: INFO: common: created directory at: artifacts]
+[2024-10-29 11:16:34,814: INFO: common: created directory at: artifacts\training]
+[2024-10-29 11:19:10,216: INFO: stage_03_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]

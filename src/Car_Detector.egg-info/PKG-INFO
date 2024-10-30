@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Car_Detector
+Version: 0.0.1
+Summary: A Car Detector
+Author: Somto Ogbe
+Author-email: ogbesomto4@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

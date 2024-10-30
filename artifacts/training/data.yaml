@@ -1,0 +1,6 @@
+path: ../artifacts/data_ingestion
+train: train/images
+val: val/images
+
+names:
+  0: car

@@ -1,0 +1,13 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_path: data.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
+
+training:
+  root_dir: artifacts/training
+  trained_model_path: yolov5/runs/train/exp/weights/best.pt
+  data_dir: artifacts/data_ingestion
+  data_config_path: artificats/training/data.yaml
